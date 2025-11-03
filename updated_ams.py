@@ -23,7 +23,7 @@ except Exception as e:
 
 app = FastAPI("Adverse Media API")
 
-FUZZY_MATCH_THRESHOLD = 70
+FUZZY_MATCH_THRESHOLD = 75
 
 
 class RiskAssessment(BaseModel):
