@@ -107,7 +107,7 @@ def get_person_articles(name: str = Query(...)):
             # remove persons & organizations before appending
             record.pop("persons", None)
             record.pop("organizations", None)
-
+            record.pop("parsed_date", None)
             processed_results.append(record)
 
     # ✅ Sort once
